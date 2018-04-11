@@ -16,11 +16,9 @@ class AuthorTest < Minitest::Test
   end
 
   def test_it_can_add_books
-    assert_equal [{author_first_name: 'Charlotte',
-                   author_last_name: 'Bronte',
-                   title: 'Jane Eyre',
-                   publication_date: '1847'}], @charlotte_bronte.add_book('Jane Eyre', '1847')
-
+    assert_equal [], @charlotte_bronte.books
+    @charlotte_bronte.add_book('Jane Eyre', '1847')
+    assert_equal 'Jane Eyre', @charlotte_bronte.books[0].title
   end
 
 end

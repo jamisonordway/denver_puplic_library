@@ -16,7 +16,6 @@ class Author
               author_last_name: @last_name,
               title: title,
               publication_date: publication_date})
-              binding.pry
   end
 
 end
