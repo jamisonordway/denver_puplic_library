@@ -11,8 +11,8 @@ class BookTest < Minitest::Test
     assert_instance_of Book, @book
   end
 
-  def test_book_information_stores_info
-    assert_equal ['Harper', 'Lee', 'To Kill a Mockingbird', '1960'], @book.book_information.values
+  def test_it_returns_author_first_name
+    assert_equal "Harper", @book.author_first_name
   end
 
 end
