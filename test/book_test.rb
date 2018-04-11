@@ -4,7 +4,10 @@ require './lib/book'
 class BookTest < Minitest::Test
 
   def setup
-    @book = Book.new('Harper', 'Lee', 'To Kill a Mockingbird', '1960')
+    @book = Book.new({author_first_name: 'Harper',
+                      author_last_name: 'Lee',
+                      title: 'To Kill a Mockingbird',
+                      publication_date: '1960'})
   end
 
   def test_it_exists

@@ -3,13 +3,13 @@ class Book
               :author_last_name,
               :title,
               :publication_date
+  attr_accessor :book_info
 
-  def initialize(first, last, title, date)
-    @author_first_name = first
-    @author_last_name = last
-    @title = title
-    @publication_date = date
+  def initialize(hash)
+    @author_first_name = hash.values[0]
+    @author_last_name = hash.values[1]
+    @title = hash.values[2]
+    @publication_date = hash.values[3]
   end
-
 
 end
