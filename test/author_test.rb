@@ -20,7 +20,7 @@ class AuthorTest < Minitest::Test
                    author_last_name: 'Bronte',
                    title: 'Jane Eyre',
                    publication_date: '1847'}], @charlotte_bronte.add_book('Jane Eyre', '1847')
-                   binding.pry
+
   end
 
 end
